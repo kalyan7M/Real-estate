@@ -1,0 +1,55 @@
+*{
+    outline: 0px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+.con{
+    background: linear-gradient(rgba(228, 116, 228, 0.521),rgba(188, 124, 233, 0.5),rgba(94, 94, 199, 0.5),rgba(110, 231, 110, 0.5),rgba(214, 214, 102, 0.5),rgba(211, 164, 78, 0.5),rgba(219, 86, 86, 0.5)),url("https://e0.pxfuel.com/wallpapers/415/1021/desktop-wallpaper-home-nature-background-full-pics-for-mobile-phones-nature-home-thumbnail.jpg");
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    width: 25%;
+    height: 60vh;
+    border: 2px solid rgb(12, 12, 12);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    flex-wrap: wrap;
+}
+.msg{
+    display: none;
+}
+input{
+    margin-left: 20px;
+}
+.log-button{
+    width: 100%;
+    height: 20px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+.login-button{
+    width: 50%;
+    height: 50px;
+    background:transparent;
+    background: linear-gradient(rgb(202, 170, 170),rgb(209, 175, 175));
+    margin-top: 10px;
+}
+.signup-button{
+    width: 50%;
+    height: 50px;
+    background:transparent;
+    margin-top: 10px;
+    background: green;
+}

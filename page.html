@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="page.css" rel="stylesheet">
+</head>
+<body>
+    <div class="con">
+        <div><h1>PMAA PROPERTIES</h1></div>
+        <div class="card">
+            <div>
+                <label for="email1">Email: </label>
+                <input type="email1" id="email1" name="email1">
+            </div>
+            <div>
+                <label for="password1">Password: </label>
+                <input type="password1" id="password1" name="password1">
+            </div>
+            <div>
+                <div class="forget">Fotget Password</div>
+            </div>
+            <div>
+                <input type="submit" value="submit" onclick="fun1()" class="submit">
+            </div>
+            <div class="log-button">
+                <button class="signup-button" onclick="signuppage()">Signup</button>
+                <button class="login-button">Login</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let signuppage=()=>{
+            window.location.href="loginform.html"
+        }
+        function fun1(){
+            var em=document.getElementById('email1').value
+            var ps=document.getElementById('password1').value
+            if(em.length>5 && ps.length){
+                alert("enterd Successfully")
+            }
+            else{
+                alert("Please fill the detailes Properly");
+            }
+            if(localStorage.getItem("email")==document.getElementById("email1").value && localStorage.getItem("password")==document.getElementById("password1").value){
+                window.location.href="v2.html"
+            }
+            else{
+                alert("enter valid Password");
+            }
+            
+            
+        }
+    </script>
+</body>
+</html>

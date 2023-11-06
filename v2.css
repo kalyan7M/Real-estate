@@ -1,0 +1,367 @@
+*{
+    outline: 0px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+.icon{
+    color:red;
+}
+nav{
+    background-color: rgb(69, 22, 78);
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nav-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-left: 20px;
+    font-size: 12px;
+    flex-basis: 500px;
+    flex-wrap: wrap;
+    flex-grow: 500px;
+}
+.nav-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 12px;
+    margin-right: 50px;
+    flex-basis: 500px;
+    flex-wrap: wrap;
+    flex-grow: 500px;
+}
+.nav-data:hover{
+    color: red;
+}
+.pro-items{
+    display: none;
+    gap: 5px;
+}
+.properties-data:hover{
+    color: red;
+}
+.properties:hover .pro-items{
+    display: block;
+    background-color:  rgb(69, 22, 78);
+    position: fixed;
+    box-sizing:content-box;
+    padding: 20px;
+}
+.home{
+    color: red;
+}
+.ban{
+    background-image: url("https://assets-us-01.kc-usercontent.com/0542d611-b6d8-4320-a4f4-35ac5cbf43a6/57134553-0077-4e93-8cfd-58895d271ef8/homeowners-insurance-facebook.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(218, 74, 8);
+    gap: 10px;
+}
+.ban h1{
+    font-size: 50px;
+}
+.ban p{
+    font-size: 20px;
+    color: white;
+}
+.ban button{
+    margin-top: 90px;
+    color: white;
+    background-color: red;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+}
+.ban button:hover{
+    background-color: rgb(218, 71, 80);
+}
+.ban .chat button{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+.buy img{
+    width: 350px;
+    height: 450px;
+    opacity: 0.7;
+    flex-basis: 200px;
+    flex-wrap: wrap;
+    flex-grow: 200px;
+    display: flex;
+}
+.rent img{
+    width: 350px;
+    height: 450px;
+    opacity: 0.7;
+    flex-basis: 200px;
+    flex-wrap: wrap;
+    flex-grow: 200px;
+    display: flex;
+}
+hr{
+    width: 80%;
+    margin-left: 10%;
+}
+.hr{
+    margin-top: 50px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buy h1{
+    position: relative;
+    top: -300px;
+    color: rgb(255, 0, 0);
+    left: 200px;
+    font-size: 50px;
+}
+.rent h1{
+    position: relative;
+    top: -300px;
+    color: green;
+    left: 200px;
+    font-size: 50px;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.card{
+    width: 25%;
+    height: 65vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 2px 2px rgb(126, 126, 212);
+    margin-top: 50px;
+    flex-wrap: wrap;
+    flex-basis: 400px;
+    flex-grow: 100%;
+}
+.card img{
+    width: 100%;
+    height: 50%;
+}
+.RENT{
+    position: relative;
+    top: -32px;
+    background-color: red;
+    color: white;
+    display: inline;
+    padding: 10px;
+}
+.info1{
+    margin-left: 10%;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 5%;
+}
+.new{
+    margin-top: 40px;
+}
+.view{
+    display: none;
+}
+.view1{
+    display: none;
+}
+.viewmore{
+    color: white;
+    background-color: red;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 90px;
+}
+.story{
+    width: 70%;
+    height: 40vh;
+    background-color: rgb(8, 8, 46);
+    margin-left: 15%;
+    position: relative;
+    top: 70px;
+    z-index: 1;
+}
+.story p{
+    color: white;
+    text-align: center;
+    padding-top: 70px;
+}
+.story i{
+    text-shadow: 5px 0px 5px 5px;
+
+}
+.left{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+}
+.right{
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+}
+.image{
+    height: 600px;
+    width: 100%;
+    background-image: url("https://www.mydomaine.com/thmb/bepet4VMGUG70sCLFNQRdZm9bbg=/2048x0/filters:no_upscale():strip_icc()/SuCasaDesign-Modern-9335be77ca0446c7883c5cf8d974e47c.jpg");
+    z-index: -2;
+    position:-webkit-sticky;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-basis: 500px;
+    flex-grow: 100%;
+    flex-wrap: wrap;
+}
+.chat{
+    z-index: 10;
+}
+.chat-bot{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    display: none;
+    right: 50px;
+    bottom: 50px;
+    position: fixed;
+    z-index: 10;
+    border: 3px solid  red;
+    border-radius: 10px;
+}
+.chat-bot .fa-xmark{
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    color: brown;
+    font-size: 30px;
+}
+.chat-dp {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 25px;
+    margin-left: 10px;
+    gap: 10px;
+}
+.chat-bot hr{
+    margin-top: 5px;
+    border-color: red;
+}
+.chat-dp .fa-circle{
+    position: absolute;
+    color: green;
+    font-size: 15px;
+    background-color: green;
+    border-radius: 50%;
+    left: 22px;
+    top: 5px;
+}
+.chat-message{
+    bottom: 5px;
+    border-radius: 10px;
+    position: absolute;
+    font-size: 15px;
+    padding: 10px;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.chat-message img{
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    border: 3px solid green;
+    border-radius: 50%;
+}
+.chat-message input{
+    width: 200px;
+    height: 40px;
+}
+.contact{
+    background-color: rgb(235, 198, 198);
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: rgb(12, 26, 145);
+}
+.contact i{
+    color: rgb(55, 28, 207);
+    font-size: 50px;
+}
+.contact-us{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(17, 17, 87);
+}
+.contact-us input{
+    background-color: rgb(17, 17, 87);
+    color: white;
+}
+.border{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(228, 11, 11);
+}
+.contact-us-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    gap: 20px;
+}
+sup{
+    color: red;
+}
+.contact-us-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.contact-us-data div p{
+    color: white;
+    font-size: 15px;
+}
+.contact-us-data div h1{
+    color: white;
+}

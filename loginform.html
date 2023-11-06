@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="loginform.css" rel="stylesheet">
+</head>
+<body>
+    <div class="con">
+        <div><h1>PMAA PROPERTIES</h1></div>
+        
+        <div class="card">
+            <div>
+                <label for="fname">First name: </label>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+            <div>
+                <label for="lname">Last name: </label>
+                <input type="text" id="lname" name="lname" required>
+            </div>
+            <div>
+                <label for="email">Email : </label>
+                <input type="email" id="email" name="email" onblur="email(this)" required>
+            </div>
+            <div>
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" onkeyup="pass(this)" onclick="password()" required>
+                <div class="msg">
+                    <div>Length is more than 8</div>
+                    <div>atleast one special char</div>
+                    <div>Atleast on Uppercase</div>
+                    <div>Atleast on digit</div>
+                </div>
+            </div> 
+            <div>
+                <input type="submit" value="Signup" onclick="fun()">
+            </div>
+            <div class="log-button">
+                <button class="signup-button">Signup</button>
+                <button class="login-button" onclick="loginpage()">Login</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function fun(){
+            var fn=document.getElementById('fname').value
+            localStorage.setItem("fname",fn)
+            var ln=document.getElementById('lname').value
+            localStorage.setItem("lname",ln)
+            var em=document.getElementById('email').value
+            localStorage.setItem("email",em)
+            var ps=document.getElementById('password').value
+            localStorage.setItem("password",ps)
+            if(fn.length>3 && ln.length>3 && em.length>5 && ps.length){
+                window.location.href="page.html"
+            }
+            else{
+                alert("Please fill the detailes Properly");
+            }
+            
+        }
+        let password=()=>{
+            document.getElementsByClassName("msg")[0].style.display="block";
+        }
+        let loginpage=()=>{
+            window.location.href="page.html";
+        }
+        let divref=document.querySelectorAll(".msg div")
+        let div=document.getElementsByClassName("msg")[0]
+        let pass=(p)=>{
+            let i=0
+            let data=p.value
+            if(data.length>8){
+                divref[0].style.color="green"
+                divref[0].style.display="none"
+                i++
+            }
+            else{
+                divref[0].style.color="red"
+            }
+            if(/[@#$%&*()]+/.test(data)){
+                divref[1].style.color="green"
+                divref[1].style.display="none"
+                i++
+            }
+            else{
+                divref[1].style.color="red"
+            }
+            if(/[A-Z]+/.test(data)){
+                divref[2].style.color="green"
+                divref[2].style.display="none"
+                i++
+            }
+            else{
+                divref[2].style.color="red"
+            }
+            if(/[0-9]+/.test(data)){
+                divref[3].style.color="green"
+                divref[3].style.display="none"
+                i++
+            }
+            else{
+                divref[3].style.color="red"
+            }
+            if(i==4){
+                p.style.border="2px solid green"
+            }
+        }
+        let email=(e)=>{
+            let data=e.value
+            if(/^[0-9a-z]+[a-z0-9]@[a-z]+.(com|in|ac.in|org)$/i.test(data)){
+                e.style.border="2px solid green"
+            }
+            else{
+                e.style.border="2px solid red"
+            }
+        }
+    </script>
+</body>
+</html>
